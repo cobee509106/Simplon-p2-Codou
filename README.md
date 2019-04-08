@@ -1,6 +1,6 @@
-x= int (" entrer valeur")
+x= int (" entrer premiere valeur")
 
-y= int (" enter valeur")
+y= int (" enter deuxiéme valeur")
 
 moyenne=(x+y)/2
 
