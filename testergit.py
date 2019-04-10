@@ -1,4 +1,4 @@
-x = int ("entrer premiére valeur")
-y = int ("entrer deuxiéme valeur")
-moyenne = (x+y)/2
-print ('moyenne')
+x= int(input("donner un nombre"))
+y= int(input("donner un nombre"))
+m=int((x+y)/2)
+print("la moyenne est de " +str(m))
