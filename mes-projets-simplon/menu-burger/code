@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>creation d'un menu burger</title>
+</head>
+<link rel="stylesheet" href="burger.css">
+<script src="burger.js">
+    </script>
+<body>
+    <div class="burger">
+        <span></span>
+
+    </div>
+</body>
+</html>
+{
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.5s ease-in-out;
+
+}
+.burger span::before, .burger span::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-block-start-color: black;
+    transition: transform 0.5s ease-in-out
+
+}
+.burger span::before
+{
+    transform: translateY(-10px);
+
+}
+.burger span::after
+
+{
+    transform: translateY(10px);
+
+}
+.burger.active span
+{
+    background-color: transparent
+
+
+}
+.burger.active span::before
+{
+    transform: translateY(0px) rotateZ(45deg);
+
+}
+.burger.active span::after
+{
+    transform: translateY(0px) rotateZ(-45deg);
+
+}
+const burger = Document.querySelector('.burger');
+
+burger.addEventListener('click',() => {
+    burger.classList.toglle('active');
+
+});
